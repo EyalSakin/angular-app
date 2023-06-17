@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {HomePageComponent} from "./home-page/home-page.component";
 
-// Import your components that you want to use for routing
-// import { HomeComponent } from './home.component';
+enum Page {
+  Home = 'home'
+}
 
 const routes: Routes = [
-  // { path: '', component: HomeComponent }, // Default route, maps to HomeComponent
+  { path: Page.Home, component: HomePageComponent },
+  { path: '', redirectTo: Page.Home, pathMatch: 'full' },
+  { path: '**', redirectTo: Page.Home }
 ];
 
 @NgModule({
