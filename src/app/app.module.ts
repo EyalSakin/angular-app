@@ -10,6 +10,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { StoreModule } from '@ngrx/store';
 import { NumbersGridComponent } from './numbers-grid/numbers-grid.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NumbersGridComponent } from './numbers-grid/numbers-grid.component';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
+    MatDialogModule,
     MatButtonModule,
     StoreModule.forRoot({}, {})
   ],

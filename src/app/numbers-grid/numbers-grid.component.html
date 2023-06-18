@@ -1,7 +1,16 @@
 <div class="grid-container">
-  <div *ngFor="let number of [1, 2, 3, 4, 5, 6, 7, 8, 9]" class="grid-container__grid-item">{{ number }}</div>
+  <div *ngFor="let number of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+       (click)="selectNumber(number)"
+       class="grid-container__grid-item">
+    {{ number }}
+  </div>
 </div>
-<div class="results-panel"></div>
-<button mat-raised-button color="primary" class="grid-container__save-button">History</button>
+<div class="results-panel">{{ selectedNumbers }}</div>
+<button mat-raised-button
+        color="primary"
+        class="grid-container__save-button"
+        (click)="showHistory()">
+  History
+</button>
 
 
