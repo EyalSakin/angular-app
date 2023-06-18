@@ -9,11 +9,13 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { StoreModule } from '@ngrx/store';
+import { NumbersGridComponent } from './numbers-grid/numbers-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    NumbersGridComponent
   ],
   imports: [
     BrowserModule,

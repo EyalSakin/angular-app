@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #3f51b5;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 40vw;
+  min-width: 186px;
+  &__grid-item {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out;
+    &:hover {
+      background-color: #dddada;
+    }
+  }
+}
+.results-panel {
+  background-color: #fff;
+  width: 40vw;
+  height: 10vh;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  min-width: 186px;
+  border: 10px solid #3f51b5;
+}
