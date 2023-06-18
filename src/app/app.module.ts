@@ -11,12 +11,15 @@ import {MatButtonModule} from "@angular/material/button";
 import { StoreModule } from '@ngrx/store';
 import { NumbersGridComponent } from './numbers-grid/numbers-grid.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import { NumberHistoryComponent } from './dialogs/number-history/number-history.component';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    NumbersGridComponent
+    NumbersGridComponent,
+    NumberHistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatIconModule,
     MatDialogModule,
     MatButtonModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

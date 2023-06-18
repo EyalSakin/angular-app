@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Output} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
+import {NumberHistoryComponent} from "../dialogs/number-history/number-history.component";
 
 @Component({
   selector: 'app-numbers-grid',
@@ -23,6 +24,6 @@ export class NumbersGridComponent {
   }
 
   public showHistory(): void {
-    // TODO: open dialog.
+    this.dialog.open(NumberHistoryComponent)
   }
 }
